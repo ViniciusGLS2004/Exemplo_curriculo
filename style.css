@@ -1,0 +1,123 @@
+/*    SELETORES   */
+
+body{
+
+    margin: 0; /* espaçamento de margem */
+    padding: 0; /* espaçamento vertical */
+    font-stretch: ultra-condensed; /* escolher o tipod e fonte */
+}
+
+.login{
+    height: 100vh; /* altura */
+    background: linear-gradient(300deg, #250fee, #ee0f0fa1); /* plano de fundo dregrade */
+    display: flex; /* mantem a tela fixa em movimento */
+    justify-content: center; /* centralizar textos */
+    align-items: center; /* centralizando icones */
+}
+
+.painel_do_login{
+    min-height: 400px; /* altura do bloco */
+    width: 300px; /* latgura */
+    background-color: white; /* cor do plane de fundo*/
+    box-sizing: border-box; /* criando borda de bloco */
+    padding: 32px; /* espaçamento de bloco */
+    border-radius: 8px; /* bordas arredondadas */
+    display: flex; /* fixa bloco */
+    flex-direction: column; /* fixa o bloco em uma unica coluna */
+    align-items: center; /* centraliza blocos */
+}
+
+.titulo_do_login{
+    margin-bottom: 32px; /* borda da matgem */
+    color: black; /* cor */
+}
+
+.forma_do_login{
+    width: 100%; /* largura */
+    display: flex; /* fixa o bloco */
+    flex-direction: column; /* fixa o bloco em uma unica coluna */
+    align-items: center; /* centraliza icones */
+    justify-content: center; /* centralizar textos */
+}
+
+.login_entrada{
+
+    height: 48px; /* altura */
+    width: 100%; /* largura */
+    box-sizing: border-box; /* criando borda de bloco */
+    padding-left: 8px; /* espaçamento esquerdo */
+    border: unset; /* retira a borda */
+    outline: none; /* retira a linha */
+}
+.login_borda_de_entrada{
+    height: 2px; /* altura */
+    width: 100%; /* largura */
+    margin-bottom: 16px; /*margem do botão */
+    background-color: white; /* cor */
+    transition: .3s esse-in-out; /* funçãod e efeitos */
+    background: linear-gradient(300deg, #250fee, #ee0f0fa1);
+}
+
+.login_entrada{
+
+    height: 48px; /* altura */
+    width: 100%; /* largura */
+    box-sizing: border-box; /* criando borda de bloco */
+    padding-left: 8px; /* espaçamento esquerdo */
+    border: unset; /* retira a borda */
+    outline: none; /* retira a linha */
+}
+
+.login_borda_de_entrada{
+    height: 2px; /* altura */
+    width: 100%; /* largura */
+    margin-bottom: 16px; /*margem do botão */
+    background-color: white; /* cor */
+    transition: .3s esse-in-out; /* funçãod e efeitos */
+    background: linear-gradient(300deg, #250fee, #ee0f0fa1);
+}
+
+.login_borda_de_entrada::after{
+    content:'';
+    display: black;
+    height: 1px;
+    width: 0;
+    margin-bottom: 16px;
+    background: linear-gradient(300deg, #250fee, #ee0f0fa1);
+    transition: .3s esse-in-out;
+}
+
+/* configuração do botão */
+
+.login_enviar{
+    height: 48px;
+    width: 100%;
+    outline: none;
+    background: linear-gradient(300deg, #250fee, #ee0f0fa1);
+    background-size: 360px;
+    margin-bottom: 32px;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    border: unset;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: .5s ease-in-out;
+}
+
+/* houver é uma propriedade adcionada ao passar ao mouse */
+.login_enviar_houver{
+    background-position: right;
+}
+
+.login_redefinir{
+    font-size: 12px; /* tamanho da fonte */
+    color: #929292;
+    text-decoration: none; /* remove o link */
+}
+
+.login_cadastra-se{
+    font-size: 12px;
+    color: #929292;
+    text-decoration: none;  /* remove o link */
+}
